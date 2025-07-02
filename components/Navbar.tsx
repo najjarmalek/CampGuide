@@ -14,13 +14,13 @@ const Navbar = () => {
           <Link
             href={link.href}
             key={link.key}
-            className="cursor-pointer regular-16 text-gray-50 flexCenter pb-1.5 transition-all hover:font-bold"
+            className="cursor-pointer regular-16 text-gray-50 flexCenter pb-1.5 transition-all hover:text-bold"
           >
             {link.label}
           </Link>
         ))}
       </ul>
-      <div className="lg:flexCenter">
+      <div className="hidden lg:flexCenter">
         <Button
           type="button"
           title="login"
@@ -28,6 +28,13 @@ const Navbar = () => {
           variant="btn_dark_green"
         />
       </div>
+      <Image
+        src="menu.svg"
+        alt="menu"
+        width={32}
+        height={34}
+        className="inline-block cursor-pointer lg:hidden"
+        />
     </nav>
   );
 };
